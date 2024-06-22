@@ -1,0 +1,46 @@
+
+> serve
+> npm run build && npm start
+
+
+> build
+> remix vite:build
+
+vite v5.3.1 building for production...
+transforming...
+✓ 709 modules transformed.
+rendering chunks...
+computing gzip size...
+build/client/.vite/manifest.json                1.12 kB │ gzip:  0.32 kB
+build/client/assets/root-BBlNUHgg.css         210.99 kB │ gzip: 22.80 kB
+build/client/assets/_index-DZc_2MZS.js          0.94 kB │ gzip:  0.41 kB
+build/client/assets/jsx-runtime-ZuPdHFNT.js     8.12 kB │ gzip:  3.05 kB
+build/client/assets/entry.client-DjiwqrYP.js   11.63 kB │ gzip:  4.09 kB
+build/client/assets/root-EFN9BTK7.js           18.14 kB │ gzip:  6.86 kB
+build/client/assets/components-D9bNhWTD.js    224.07 kB │ gzip: 72.46 kB
+✓ built in 1.46s
+vite v5.3.1 building SSR bundle for production...
+transforming...
+✓ 6 modules transformed.
+rendering chunks...
+build/server/.vite/manifest.json                 0.22 kB
+build/server/assets/server-build-BBlNUHgg.css  210.99 kB
+build/server/index.js                            7.29 kB
+✓ built in 70ms
+
+> start
+> remix-serve ./build/server/index.js
+
+[remix-serve] http://localhost:3000 (http://10.10.101.12:3000)
+GET / 200 - - 21.267 ms
+GET / 200 - - 6.493 ms
+
+> start
+> remix-serve ./build/server/index.js
+
+[remix-serve] http://localhost:56512 (http://10.10.101.12:56512)
+
+> start
+> remix-serve ./build/server/index.js
+
+[remix-serve] http://localhost:56530 (http://10.10.101.12:56530)
