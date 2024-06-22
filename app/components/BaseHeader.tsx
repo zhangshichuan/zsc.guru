@@ -32,7 +32,7 @@ function BaseHeader() {
 				}}
 				className="cursor-pointer"
 				size="sm"
-				src="/public/image/avatar.png"
+				src="/image/avatar.png"
 			/>
 
 			{/* 导航 */}
