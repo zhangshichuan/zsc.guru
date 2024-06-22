@@ -1,5 +1,6 @@
 import { NextUIProvider } from '@nextui-org/system'
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
+import { BaseHeader } from './components/BaseHeader'
 import './tailwind.css'
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -23,7 +24,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
 	return (
 		<NextUIProvider>
-			<Outlet />
+			<section className="w-full h-screen bg-[#fafafa] flex justify-center">
+				<section className="w-[1200px] px-12 bg-white">
+					<BaseHeader />
+					<section className="mt-36">
+						<Outlet />
+					</section>
+				</section>
+			</section>
 		</NextUIProvider>
 	)
 }
