@@ -1,0 +1,85 @@
+{
+	"name": "modern-monorepo-template",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"preinstall": "npx -y only-allow pnpm",
+		"prepare": "husky",
+		"dev": "pnpm -F './apps/**' run dev",
+		"lint": "tsc && eslint && prettier --write ./"
+	},
+	"lint-staged": {
+		"*.{ts,tsx,js,jsx}": [
+			"eslint"
+		],
+		"*.{ts,tsx,js,mjs,cjs,jsx,json,html,yml,css,md}": [
+			"prettier --write"
+		]
+	},
+	"keywords": [],
+	"author": "zsc.guru@gmail.com",
+	"license": "ISC",
+	"dependencies": {
+		"@nestjs/common": "^10.0.0",
+		"@nestjs/core": "^10.0.0",
+		"@nestjs/platform-express": "^10.0.0",
+		"antd": "^5.22.5",
+		"axios": "^1.7.9",
+		"blueimp-md5": "^2.19.0",
+		"classnames": "^2.5.1",
+		"dayjs": "^1.11.13",
+		"framer-motion": "^11.15.0",
+		"immer": "^10.1.1",
+		"isbot": "^5.1.18",
+		"lodash": "^4.17.21",
+		"pm2": "^5.4.3",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"react-router": "^7.1.0",
+		"reflect-metadata": "^0.2.0",
+		"rxjs": "^7.8.1",
+		"uuid": "^11.0.3"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.6.1",
+		"@commitlint/config-conventional": "^19.6.0",
+		"@eslint/js": "^9.17.0",
+		"@nestjs/cli": "^10.0.0",
+		"@nestjs/schematics": "^10.0.0",
+		"@nestjs/testing": "^10.0.0",
+		"@types/express": "^5.0.0",
+		"@types/jest": "^29.5.2",
+		"@types/node": "^22.10.2",
+		"@types/react": "^19.0.2",
+		"@types/react-dom": "^19.0.2",
+		"@types/supertest": "^6.0.0",
+		"autoprefixer": "^10.4.20",
+		"cross-env": "^7.0.3",
+		"eslint": "^9.17.0",
+		"eslint-plugin-react": "^7.37.2",
+		"globals": "^15.14.0",
+		"husky": "^9.1.7",
+		"jest": "^29.5.0",
+		"lint-staged": "^15.2.11",
+		"postcss": "^8.4.49",
+		"prettier": "^3.4.2",
+		"prisma": "^6.1.0",
+		"source-map-support": "^0.5.21",
+		"supertest": "^7.0.0",
+		"tailwindcss": "^3.4.17",
+		"ts-jest": "^29.1.0",
+		"ts-loader": "^9.4.3",
+		"ts-node": "^10.9.1",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "^5.7.2",
+		"typescript-eslint": "^8.18.1",
+		"vite": "^6.0.5",
+		"vite-plugin-checker": "^0.8.0",
+		"vite-tsconfig-paths": "^5.1.4"
+	},
+	"engines": {
+		"node": ">=20.12.0"
+	}
+}

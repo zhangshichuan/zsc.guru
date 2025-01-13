@@ -1,0 +1,9 @@
+node_modules
+build
+dist
+.idea/*
+.DS_Store
+*.local
+
+.react-router
+tsconfig.tsbuildinfo

@@ -1,0 +1,4 @@
+{
+	"files": [],
+	"references": [{ "path": "./apps/nest-app" }, { "path": "./apps/react-router-app" }]
+}

@@ -1,0 +1,21 @@
+{
+	"name": "react-router-app",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build:dev": "cross-env NODE_ENV=production react-router build --mode dev",
+		"build:stg": "cross-env NODE_ENV=production react-router build --mode stg",
+		"build:prod": "cross-env NODE_ENV=production react-router build --mode prod",
+		"dev": "cross-env react-router dev --host --port 5173",
+		"start": "cross-env NODE_ENV=production react-router-serve ./build/server/index.js",
+		"typecheck": "react-router typegen && tsc"
+	},
+	"dependencies": {
+		"@react-router/node": "^7.1.1",
+		"@react-router/serve": "^7.1.1",
+		"isbot": "^5.1.17"
+	},
+	"devDependencies": {
+		"@react-router/dev": "^7.1.1"
+	}
+}
