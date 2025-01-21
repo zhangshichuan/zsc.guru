@@ -3,11 +3,9 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build:dev": "cross-env NODE_ENV=production react-router build --mode dev",
-		"build:stg": "cross-env NODE_ENV=production react-router build --mode stg",
-		"build:prod": "cross-env NODE_ENV=production react-router build --mode prod",
 		"dev": "cross-env react-router dev --host --port 3002",
-		"start": "cross-env NODE_ENV=production npm run build:prod && PORT=3002 react-router-serve ./build/server/index.js",
+		"build": "cross-env NODE_ENV=production react-router typegen && react-router build",
+		"start": "cross-env NODE_ENV=production npm run build && PORT=3002 react-router-serve ./build/server/index.js",
 		"typecheck": "react-router typegen && tsc"
 	},
 	"dependencies": {
