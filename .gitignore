@@ -7,3 +7,6 @@ dist
 
 .react-router
 tsconfig.tsbuildinfo
+logs
+npm-debug.log
+yarn-error.log

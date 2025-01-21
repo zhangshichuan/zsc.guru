@@ -1,13 +1,13 @@
 {
-	"name": "react-router-app",
+	"name": "zsc.guru-fe",
 	"private": true,
 	"type": "module",
 	"scripts": {
 		"build:dev": "cross-env NODE_ENV=production react-router build --mode dev",
 		"build:stg": "cross-env NODE_ENV=production react-router build --mode stg",
 		"build:prod": "cross-env NODE_ENV=production react-router build --mode prod",
-		"dev": "cross-env react-router dev --host --port 5173",
-		"start": "cross-env NODE_ENV=production react-router-serve ./build/server/index.js",
+		"dev": "cross-env react-router dev --host --port 3002",
+		"start": "cross-env NODE_ENV=production && npm run build:prod && react-router-serve ./build/server/index.js --port 3002",
 		"typecheck": "react-router typegen && tsc"
 	},
 	"dependencies": {
