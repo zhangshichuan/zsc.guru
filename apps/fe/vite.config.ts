@@ -1,3 +1,4 @@
+import mdx from '@mdx-js/rollup'
 import { reactRouter } from '@react-router/dev/vite'
 import autoprefixer from 'autoprefixer'
 import tailwindcss from 'tailwindcss'
@@ -16,6 +17,7 @@ export default defineConfig(({ mode }) => {
 			},
 		},
 		plugins: [
+			mdx(/* jsxImportSource: …, otherOptions… */),
 			reactRouter(),
 			tsconfigPaths(),
 			checker({

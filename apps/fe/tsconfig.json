@@ -3,7 +3,6 @@
 	"compilerOptions": {
 		"composite": true,
 		"lib": ["DOM", "DOM.Iterable", "ES2022"],
-		"types": ["node", "vite/client"],
 		"target": "ES2022",
 		"module": "ES2022",
 		"moduleResolution": "bundler",
@@ -11,7 +10,8 @@
 		"rootDirs": [".", "./.react-router/types"],
 		"baseUrl": ".",
 		"paths": {
-			"~/*": ["./app/*"]
+			"~/*": ["./app/*"],
+			"@posts/*": ["./app/posts/*"]
 		},
 		"esModuleInterop": true,
 		"verbatimModuleSyntax": true,
@@ -19,5 +19,9 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"strict": true
+	},
+	"mdx": {
+		// Enable strict type checking in MDX files.
+		"checkMdx": true
 	}
 }
