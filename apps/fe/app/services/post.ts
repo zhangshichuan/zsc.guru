@@ -9,7 +9,7 @@ export function getPostFileList() {
 	const list: IPost[] = []
 
 	Object.entries(postModules).map((entry) => {
-		const match = entry?.[0].match(/..\/posts\/(.*)\.md/)
+		const match = entry?.[0].match(/..\/posts\/(.*)\.(md|mdx)/)
 
 		if (match) {
 			list.push({
