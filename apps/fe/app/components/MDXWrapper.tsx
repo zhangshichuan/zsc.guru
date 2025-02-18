@@ -6,7 +6,9 @@ interface MDXProviderProps extends PropsWithChildren {}
 export function MDXWrapper({ children }: MDXProviderProps) {
 	return (
 		<MDXProvider>
-			<div className="prose max-w-prose">{children}</div>
+			<div className="p-6 prose max-w-[1200px]" style={{ margin: '0 auto' }}>
+				{children}
+			</div>
 		</MDXProvider>
 	)
 }

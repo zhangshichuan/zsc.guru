@@ -17,7 +17,7 @@ export default function Component() {
 	const { name } = useLoaderData<typeof loader>()
 
 	return (
-		<div className="">
+		<div>
 			<MDXWrapper>
 				<LazyPost name={name} />
 			</MDXWrapper>
