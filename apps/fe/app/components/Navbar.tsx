@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { NavLink } from 'react-router'
 
-const Navbar = () => {
+export const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false)
 
 	const navLinks = [
@@ -105,5 +105,3 @@ const Navbar = () => {
 		</motion.nav>
 	)
 }
-
-export { Navbar }
