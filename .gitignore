@@ -1,0 +1,15 @@
+node_modules
+build
+dist
+.idea/*
+.DS_Store
+*.local
+
+.react-router
+tsconfig.tsbuildinfo
+logs
+npm-debug.log
+yarn-error.log
+
+.turbo
+logs
