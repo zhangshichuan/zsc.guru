@@ -3,7 +3,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build:prod": "cross-env NODE_ENV=production react-router build --mode prod",
+		"build:prod": "npm run typecheck && react-router build --mode prod",
 		"dev": "react-router dev --host --port 5173",
 		"addComponents": "shadcn add",
 		"lint": "tsc",

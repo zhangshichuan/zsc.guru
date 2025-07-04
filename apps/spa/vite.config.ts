@@ -17,6 +17,10 @@ export default defineConfig(({ mode }) => {
 			devtoolsJson(),
 			checker({
 				typescript: true,
+				eslint: {
+					useFlatConfig: true,
+					lintCommand: 'eslint "./app/**/*.{ts,tsx}"',
+				},
 			}),
 		],
 		server: {
