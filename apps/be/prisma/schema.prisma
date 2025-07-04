@@ -10,7 +10,7 @@ generator client {
 }
 
 datasource db {
-  provider     = "postgresql"
+  provider     = "sqlite"
   url          = env("DATABASE_URL")
   /**
    * 使用Prisma级联而非数据库外键，降低数据库压力
@@ -29,8 +29,8 @@ datasource db {
 
 model Post {
   id        Int      @id @default(autoincrement())
-  title     String   @db.VarChar(255)
-  createdAt DateTime @default(now()) @db.Timestamp(6)
+  title     String
+  createdAt DateTime @default(now())
   content   String?
   published Boolean  @default(false)
   viewCount Int
@@ -53,8 +53,8 @@ model Profile {
 
 model User {
   id      Int      @id @default(autoincrement())
-  name    String?  @db.VarChar(255)
-  email   String   @unique @db.VarChar(255)
+  name    String?
+  email   String   @unique
   Post    Post[]
   Profile Profile?
 }
