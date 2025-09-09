@@ -1,4 +1,4 @@
-name: Deploy to Example
+name: Deploy to zsc.guru
 
 on:
   push:

@@ -12,7 +12,8 @@ export default [
 	...tseslint.configs.recommended,
 	pluginReact.configs.flat.recommended,
 	{
-		files: ['apps/ssr/**/*.{ts,tsx}'],
+		name: 'next',
+		files: ['apps/main/**/*.{ts,tsx}'],
 		plugins: {
 			'@next/next': pluginNext,
 		},

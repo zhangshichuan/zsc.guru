@@ -1,5 +1,5 @@
 {
-	"name": "modern-monorepo-template",
+	"name": "zsc.guru",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
@@ -31,8 +31,7 @@
 		"@prisma/client": "6.10.1",
 		"@tailwindcss/postcss": "^4",
 		"@tailwindcss/vite": "^4.1.10",
-		"axios": "^1.10.0",
-		"blueimp-md5": "^2.19.0",
+		"spark-md5": "^3.0.2",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"ogl": "^1.0.11",
@@ -49,7 +48,8 @@
 		"tailwind-merge": "^3.3.1",
 		"tailwindcss": "^4.1.10",
 		"three": "^0.167.1",
-		"uuid": "^11.1.0"
+		"uuid": "^11.1.0",
+		"zod": "^4.0.5"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.29.4",

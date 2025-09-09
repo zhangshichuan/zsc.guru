@@ -1,20 +1,21 @@
 {
-	"name": "ssr",
+	"name": "main",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev --turbopack --port 5174",
+		"dev": "next dev --turbopack --port 3000",
 		"build:prod": "next build",
-		"start": "next start --port 3001",
+		"start": "next start --port 3000",
 		"addComponents": "shadcn add",
 		"addBits": "jsrepo add",
-		"lint": "next lint"
+		"lint": "tsc"
 	},
 	"dependencies": {
 		"@radix-ui/react-avatar": "^1.1.10",
 		"@radix-ui/react-slot": "^1.2.3",
 		"@react-three/drei": "^10.3.0",
 		"@react-three/fiber": "^9.1.4",
-		"next": "15.3.4"
+		"next": "^15.4.1",
+		"next-themes": "^0.4.6"
 	}
 }

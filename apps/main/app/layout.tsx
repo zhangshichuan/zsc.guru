@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import { ThemeProvider } from 'next-themes'
+
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -12,9 +14,11 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="en">
+		<html lang="zh-CN">
 			<body className="antialiased flex justify-center">
-				<div className="w-[1080px]">{children}</div>
+				<ThemeProvider enableSystem={true} disableTransitionOnChange>
+					<div className="w-[1080px]">{children}</div>
+				</ThemeProvider>
 			</body>
 		</html>
 	)
