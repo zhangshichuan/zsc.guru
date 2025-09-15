@@ -14,10 +14,10 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="zh-CN">
-			<body className="antialiased flex justify-center">
-				<ThemeProvider enableSystem={true} disableTransitionOnChange>
-					<div className="w-[1080px]">{children}</div>
+		<html lang="zh-CN" suppressHydrationWarning>
+			<body className="antialiased">
+				<ThemeProvider attribute="class" enableSystem={true} disableTransitionOnChange>
+					{children}
 				</ThemeProvider>
 			</body>
 		</html>

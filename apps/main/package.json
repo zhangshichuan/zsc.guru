@@ -3,9 +3,9 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev --turbopack --port 3000",
+		"dev": "next dev --turbopack --port 3001",
 		"build:prod": "next build",
-		"start": "next start --port 3000",
+		"start": "next start --port 3001",
 		"addComponents": "shadcn add",
 		"addBits": "jsrepo add",
 		"lint": "tsc"
@@ -16,6 +16,8 @@
 		"@react-three/drei": "^10.3.0",
 		"@react-three/fiber": "^9.1.4",
 		"next": "^15.4.1",
-		"next-themes": "^0.4.6"
+		"next-themes": "^0.4.6",
+		"ogl": "^1.0.11",
+		"three": "^0.167.1"
 	}
 }
