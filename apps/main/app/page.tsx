@@ -26,7 +26,7 @@ export default function Home() {
 					<AvatarFallback>MZ</AvatarFallback>
 				</Avatar>
 				<h1 className="mt-6 text-3xl font-bold tracking-tight md:text-4xl">Max Zhang</h1>
-				<p className="mt-3 text-lg text-muted-foreground md:text-xl">TypeScript & Rust</p>
+				<p className="mt-3 text-lg text-muted-foreground md:text-xl">热衷于构建美好数字体验的工程师</p>
 				<div className="mt-6 flex gap-4">
 					<Button asChild variant="outline">
 						<a href="https://github.com/zhangshichuan" target="_blank" rel="noopener noreferrer">
